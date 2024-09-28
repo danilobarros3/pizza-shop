@@ -1,50 +1,41 @@
-# React + TypeScript + Vite
+# Projeto de Gerenciamento de Pedidos - Pizzaria
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto é uma aplicação web que permite realizar o **login**, cadastrar novos usuários e visualizar uma **tabela de pedidos**. A tabela exibe informações sobre os pedidos, como ID, tempo desde que foi realizado, nome do cliente, status e o total. O sistema também permite **filtrar** os pedidos com base em diferentes critérios. O frontend é desenvolvido com **Vite**, **React**, **TypeScript**, **Shadcn** e **Tailwind CSS**, e será integrado com um backend para obter as informações.
 
-Currently, two official plugins are available:
+## Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Autenticação**: Sistema de login e cadastro de usuários.
+- **Tabela de Pedidos**: Exibe detalhes dos pedidos:
+  - ID do Pedido
+  - Tempo desde a criação do pedido (realizado há)
+  - Nome do Cliente
+  - Status do Pedido
+  - Total do Pedido
+- **Filtros**: Permite filtrar os pedidos por diferentes critérios (ex: status do pedido, nome do cliente, etc.).
+- **Integração com o Backend**: Os dados dos pedidos serão obtidos de um backend via API.
 
-## Expanding the ESLint configuration
+## Tecnologias Utilizadas
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Vite**: Ferramenta de build rápida para o desenvolvimento de aplicações React.
+- **React**: Biblioteca JavaScript para criação de interfaces de usuário.
+- **TypeScript**: Superset de JavaScript que adiciona tipos estáticos.
+- **Shadcn**: Biblioteca para estilização e design de componentes.
+- **Tailwind CSS**: Framework de CSS utilitário para estilização rápida e eficiente.
 
-- Configure the top-level `parserOptions` property like this:
+## Como Executar o Projeto
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### Pré-requisitos
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+Antes de começar, você precisará ter as seguintes ferramentas instaladas no seu sistema:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+- [Node.js](https://nodejs.org/en/download/)
+- [Git](https://git-scm.com)
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+Além disso, é interessante ter um editor de código, como o [Visual Studio Code](https://code.visualstudio.com/).
+
+### Passos para rodar o projeto localmente
+
+1. Clone este repositório:
+
+   ```bash
+   git clone https://github.com/seu-usuario/nome-do-repositorio.git
