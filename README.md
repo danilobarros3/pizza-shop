@@ -38,4 +38,4 @@ Além disso, é interessante ter um editor de código, como o [Visual Studio Cod
 1. Clone este repositório:
 
    ```bash
-   git clone https://github.com/seu-usuario/nome-do-repositorio.git
+   git clone https://github.com/danilobarros3/pizza-shop.git
