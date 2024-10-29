@@ -22,7 +22,7 @@ export default function SignUp() {
     formState: { isSubmitting },
   } = useForm<ISignUpForm>();
 
-  async function handleSignUp(data: ISignUpForm) {
+  async function handleSignUp() {
     try {
       await new Promise((resolve) => setTimeout(resolve, 2000));
       toast.success("Restaurante cadastrado com sucesso", {

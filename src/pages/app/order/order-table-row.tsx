@@ -4,9 +4,8 @@ import { TableCell, TableRow } from "../../../components/ui/table";
 import { Dialog, DialogTrigger } from "../../../components/ui/dialog";
 import { OrderDetails } from "./order-details";
 
-export interface OrderTableProps {}
 
-export function OrderTableRow(props: OrderTableProps) {
+export function OrderTableRow() {
   return (
     <TableRow>
       <TableCell>
